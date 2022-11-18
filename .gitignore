@@ -49,6 +49,14 @@ captures/
 .idea/modules.xml
 # Comment next line if keeping position of elements in Navigation Editor is relevant for you
 .idea/navEditor.xml
+.idea/.gitignore
+.idea/.name
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/codeStyles/Project.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/deploymentTargetDropDown.xml
 
 # Keystore files
 # Uncomment the following lines if you do not want to check your keystore files in.
@@ -83,3 +91,7 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+# Mac file storage
+.DS_Store
+*.DS_Store
