@@ -1,5 +1,6 @@
 import Dependencies.addCoreModuleDependencies
 import Dependencies.addCoreUiDependencies
+import Dependencies.addDomainDependencies
 import Dependencies.addTestDependencies
 
 plugins {
@@ -18,13 +19,17 @@ android {
     buildToolsVersion = AppConfig.buildTools
 
     defaultConfig {
-        applicationId = "com.education.nycschools"
+        applicationId = "com.block.stocks"
         minSdk = AppConfig.minSdk
         targetSdk = AppConfig.targetSdk
         versionCode = AppConfig.versionCode
         versionName = AppConfig.versionName
         multiDexEnabled = true
         testInstrumentationRunner = AppConfig.androidTestInstrumentation
+        buildConfigField("String", "API_BASE_URL", "\"https://storage.googleapis.com/cash-homework/cash-stocks-api/\"")
+        buildConfigField("String", "DATABASE_NAME", "\"app-db\"")
+        buildConfigField("int", "DATABASE_VERSION", "1")
+        buildConfigField("boolean", "DATABASE_EXPORT_SCHEMA", "false")
     }
 
 //    signingConfigs {
@@ -95,6 +100,7 @@ dependencies {
     implementation(Dependencies.multiDex)
     implementation(Dependencies.splashScreen)
     addCoreModuleDependencies()
+    addDomainDependencies()
     addCoreUiDependencies()
     addTestDependencies()
 }

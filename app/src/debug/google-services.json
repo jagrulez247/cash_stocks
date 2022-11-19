@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "913130741669",
+    "project_id": "cashstocks-e30a9",
+    "storage_bucket": "cashstocks-e30a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913130741669:android:3cd1a8ad16d46bca55124c",
+        "android_client_info": {
+          "package_name": "com.block.stocks.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913130741669-og3lqmp1picevslubvu25q2e752fd1q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKfVWuUX89mgTvDgsm3Tdmi9-DgQdr0LM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913130741669-og3lqmp1picevslubvu25q2e752fd1q8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
