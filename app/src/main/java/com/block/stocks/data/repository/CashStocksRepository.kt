@@ -13,7 +13,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class CashStocksRepository@Inject constructor(
+class CashStocksRepository @Inject constructor(
     private val remoteDataSource: CashStocksRemoteDataSource,
     private val stocksDao: CashStocksDataDao
 ) {

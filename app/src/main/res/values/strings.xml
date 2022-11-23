@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Cash Stocks</string>
+    <string name="no_data">Portfolio not loaded.\nPlease check network connectivity</string>
+    <string name="share_count">(%1$d shares)</string>
+    <string name="price_per_stock">(%1$s)</string>
+    <string name="last_updated_time">Last Updated At: %1$s</string>
+    <string name="empty_data">___</string>
 </resources>

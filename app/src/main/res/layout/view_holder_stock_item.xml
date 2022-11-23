@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cashStocksCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_primary_with_border_view">
+
+        <TextView
+            android:id="@+id/cashStockTicker"
+            style="@style/TextView.Secondary.Medium.Bold"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="TWTR" />
+
+        <TextView
+            android:id="@+id/cashStockShares"
+            style="@style/TextView.Secondary.Normal"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/cashStockTicker"
+            app:layout_constraintTop_toTopOf="@id/cashStockTicker"
+            app:layout_constraintBottom_toBottomOf="@id/cashStockTicker"
+            tools:text="(100 shares)" />
+
+        <TextView
+            android:id="@+id/cashStockPrice"
+            style="@style/TextView.Accent.Medium.Bold"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="$10,350.09" />
+
+        <TextView
+            android:id="@+id/cashStockName"
+            style="@style/TextView.Secondary.Small"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cashStockTicker"
+            tools:text="TWITTER INC" />
+
+        <TextView
+            android:id="@+id/cashStockPerStockPrice"
+            style="@style/TextView.Accent.Small"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/cashStockName"
+            app:layout_constraintTop_toBottomOf="@id/cashStockTicker"
+            tools:text="($38.99)" />
+
+        <TextView
+            android:id="@+id/cashStockTimestamp"
+            style="@style/TextView.Secondary.Small"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cashStockName"
+            tools:text="Last updated at: 10:00am 11/22/2022" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+
