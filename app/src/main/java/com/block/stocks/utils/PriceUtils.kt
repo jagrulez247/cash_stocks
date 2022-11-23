@@ -16,8 +16,9 @@ object PriceUtils {
         }
 
         return try {
-            val formatter = NumberFormat.getInstance()
+            val formatter = NumberFormat.getCurrencyInstance()
             formatter.currency = Currency.getInstance(validCurrencyCode)
+            formatter.maximumFractionDigits = 2
             formatter.format(cents.toDouble()/100)
         } catch (ex: Exception) {
             ""
